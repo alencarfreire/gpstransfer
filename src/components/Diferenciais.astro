@@ -1,19 +1,22 @@
 ---
-interface Props {
-  icon?: string;
-  title: string;
-  description: string;
-}
-
-const { icon, title, description } = Astro.props;
+import CardDiferenciais from "./CardDiferenciais.astro";
 ---
 
-<h3 class="text-[#F2444A] font-semibold px-6 mb-4">NOSSOS DIFERENCIAIS</h3>
-<div class="bg-gradient-to-tl from-[#df2329] to-[#fa6f74] max-w-[300px] text-white rounded-lg text-center p-6 mb-10">
-  <span class="text-5xl">{icon}</span>
-  <div class="mt-4">
-    <h4 class="text-2xl mb-4">{title}</h4>
-    <p>{description}</p>
-  </div>
-
+<h3 class="text-[#F2444A] text-3xl font-semibold px-6 mb-4 mt-6">NOSSOS DIFERENCIAIS</h3>
+<div class="flex flex-wrap gap-6 justify-center items-center mb-10 py-16">
+<CardDiferenciais
+  icon="🗺️"
+  title="Cobertura Regional"
+  description="Cobrimos toda região de Porto Seguro, onde você precisar, vamos até você e levamos para onde precisar."
+/>
+<CardDiferenciais
+  icon="💎"
+  title="Totalmente Privativo"
+  description="Tenha o conforto e a privacidade de ir em um transporte unicamente contratado para você."
+/>
+<CardDiferenciais
+  icon="🕑"
+  title="Portualidade"
+  description="Queremos sua tranquilidade e nós que vamos esperar você, seu tempo é sagrado e respeitamos isso."
+/>
 </div>
