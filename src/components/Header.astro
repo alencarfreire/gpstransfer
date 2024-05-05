@@ -1,8 +1,10 @@
 ---
+import { Image } from "astro:assets";
+import logoGps from "./public/logogps.svg";
 ---
 
 <header class="flex justify-between items-center py-4 px-6 border-b max-w-[1080px] m-auto">
-  <img src="./public/logogps.svg" alt="Logo" class="w-[200px] h-auto" />
+  <Image src={logoGps} alt="Logo" class="w-[200px] h-auto" />
   <nav>
     <ul>
       <li><a href="/contact" class="text-sm">Entrar em Contato</a></li>
