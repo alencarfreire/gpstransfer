@@ -1,7 +1,8 @@
 ---
 import FAQ from "../components/FAQ.astro";
 import Footer from "../components/Footer.astro";
-import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import GoogleAnalytics from "../components/GTM.astro";
+import GTM from "../components/GTM.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Reviews from "../components/Reviews.astro";
@@ -33,6 +34,7 @@ const { title } = Astro.props;
     />
     <meta property="og:image" content="https://i.imgur.com/VyyElng.png" />
     <GoogleAnalytics />
+    <GTM />
   </head>
   <body class="bg-white">
     <iframe
