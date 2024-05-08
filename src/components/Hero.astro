@@ -7,7 +7,7 @@
   <header>
     <div class="mb-12">
       <span class="border rounded-full py-3 px-5 font-bold text-[#1F1818]"
-        >📲 • Status do Atendimento: <span class="text-green-500">Online.</span>
+        >📲 • Status do Atendimento: <span class="text-green-500" id="online">Online.</span>
       </span>
     </div>
   </header>
@@ -23,7 +23,27 @@
       > e região 🚗
     </p>
   </div>
-  <a href="" class="mt-12 mb-4 bg-green-500 text-white px-8 py-4 rounded-full flex gap-2"
+  <a
+    href="https://api.whatsapp.com/send?phone=5573998344769&text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20transfer..."
+    class="mt-12 mb-4 bg-green-500 text-white px-8 py-4 rounded-full flex gap-2"
     ><button>Entrar em Contato</button><i class="ri-whatsapp-fill text-2xl"></i></a
   >
 </div>
+
+<style>
+  @keyframes blink {
+    0% {
+      color: #22c55e;
+    }
+    50% {
+      color: #15803d;
+    }
+    100% {
+      color: #22c55e;
+    }
+  }
+
+  #online {
+    animation: blink 2s infinite;
+  }
+</style>
