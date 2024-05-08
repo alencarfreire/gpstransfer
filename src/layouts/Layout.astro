@@ -1,12 +1,10 @@
 ---
-import Diferenciais from "../components/Diferenciais.astro";
 import FAQ from "../components/FAQ.astro";
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Reviews from "../components/Reviews.astro";
-import SectionCard from "../components/SectionCard.astro";
 import "remixicon/fonts/remixicon.css";
-
 
 interface Props {
   title: string;
@@ -26,18 +24,14 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-white">
     <Header />
     <main class="flex flex-col max-w-[920px] justify-center items-center content-center m-auto">
       <Hero />
-      <Diferenciais/>
-      <SectionCard />
       <Reviews />
-      <FAQ
-        question="Porque contratar um transfer de forma antecipada?"
-        answer="Garantia de que você será atendido com horário agendado, tranquilidade, atendimento exclsuivo e um melhor valor."
-      />
+      <FAQ />
     </main>
+    <Footer />
     <slot />
   </body>
 </html>
